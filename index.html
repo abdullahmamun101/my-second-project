@@ -3,9 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tech Conference</title>
 </head>
 <body>
+    <header>
+        <hr>
+        <h1>Tech Conference 2026</h1>
+        <h2>Register for the Biggest Tech event</h2>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="speaker.html">Speakers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Event Details</h2>
+            <p>Event name: Tech Conference 2026</p>
+            <p>Date: August 15-17, 2026</p>
+            <p>Location: Dhaka, Bangladesh</p>
+        </section>
+
+        <section>
+            <h2>Registration Form</h2>
+            <p>Register now to secure your spot at the Tech Conference 2026!</p>
+            <form action="submit_registration.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="number">Age:</label>
+                <input type="number" id="number" name="number" required><br><br>
+
+                <label for="ticket">Ticket Type:</label>
+                <select id="ticket" name="ticket">
+                    <option value="standard">Standard</option>
+                    <option value="vip">VIP</option>
+                    <option value="student">Student</option>
+                </select><br><br>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the terms and conditions</label><br><br>
+
+                <input type="submit" value="Register">
+            </form>
+            </section>
+
+            <section>
+                <h2>Select Session</h2>
+                <p>Choose the sessions you want to attend:</p>
+                <ul>
+                    <li><input type="checkbox" id="session1" name="sessions[]" value="session1">
+                        <label for="session1">Introduction to Python</label></li>
+                    <li><input type="checkbox" id="session2" name="sessions[]" value="session2">
+                        <label for="session2">Advanced JavaScript Techniques</label></li>
+                    <li><input type="checkbox" id="session3" name="sessions[]" value="session3">
+                        <label for="session3">Machine Learning Basics</label></li>
+                    <li><input type="checkbox" id="session4" name="sessions[]" value="session4">
+                        <label for="session4">AI</label></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Payment Information</h2>
+                <p>Please provide your payment details:</p>
+                <form action="submit_payment.php" method="POST">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" required><br><br>
+
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required><br><br>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required><br><br>
+
+                <input type="submit" value="Submit Payment">
+                </form>
+            </section>
+
+            <section>
+                <h3>Country</h3>
+                    <label for="country">Select your country:</label>
+                    <select id="country" name="country">
+                        <option value="bangladesh">Bangladesh</option>
+                        <option value="india">India</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="nepal">Nepal</option>
+                        <option value="sri-lanka">Sri Lanka</option>
+                </select>
+            </section>
+
+            <section>
+                <h2>Contact Information</h2>
+                <p>If you have any questions, please reach out to us:</p>
+                <a href="mailto:info@conference.com">Email Us</a><br><br>
+                <a href="tel:+1234567890">Call Us</a>
+            </section>
+            
+    </main>
+<hr>
+    <footer>
+        <p>&copy; 2026 Conference. All rights reserved.</p>
+    </footer>
     
 </body>
 </html>
